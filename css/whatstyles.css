@@ -82,3 +82,9 @@ body {
         overflow-clip-margin: content-box;
         overflow: clip;
     }
+
+    .head4 {
+      font-size: 1.75rem;
+      font-weight: bold;
+      padding: 1.5rem;
+    }
