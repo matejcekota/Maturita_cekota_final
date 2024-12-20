@@ -1,0 +1,123 @@
+@import url("brands.fontawesome.css");
+@import url("fontawesome.css");
+@import url("solid.fontawesome.css");
+
+nav{
+    margin: 0;
+    padding: 0;
+    font-family: Jaro;
+    box-sizing: border-box;
+  }
+  
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background: rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    }
+  
+  .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  
+  }
+  
+  nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+  
+  }
+  
+  nav a,button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  
+  }
+  nav a::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    scale:1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 25px;
+  
+  }
+  button {
+    font-family: Jaro;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    background: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 9px 25px;
+    transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    
+  }
+  
+  button > a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  button > a > font:before {
+    content: " ";
+    width: 0;
+    height: 100%;
+    border-bottom: 1px solid black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  button:hover > a > font:before {
+    width: 100%;
+  }
+    
+  
+  nav li a:hover{
+    transition: all 0.4s ease 0s;
+    color: black;
+  }
+
+  #footer {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    height: 60px;
+    justify-content: center;
+    font: 1.5rem Jaro;
+    background-color:  rgb(24, 23, 23);
+    font-size: 1.5rem;
+  }
+  
+  #footer a {
+    color: grey;
+    text-decoration: none;
+    font: 1.5rem Jaro;
+  }
+  
+  #footer a:hover {
+    color: rgb(66, 2, 111);
+  }

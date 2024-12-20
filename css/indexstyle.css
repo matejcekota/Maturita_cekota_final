@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lexend:wght@100..900&display=swap');
+@import url("navfoot.css");
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../pic/adam.jpg) no-repeat;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+#showcase {
+
+    height: 90vh;
+    color: white;
+    animation: shIn 3s ease;
+    -webkit-animation: shIn 3s ease;
+    }
+@keyframes shIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+  #showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: rgba(0 , 0, 0, 0.3);
+    font-family: 'Lexend', sans-serif;
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.3rem;
+    margin-bottom: 5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    color: white;
+    background-color:rgba(104, 109, 104, 0.733);
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    margin-bottom: 5rem;
+  }
+
+  .btn:hover {
+    background-color: rgba(104, 109, 104, 0.733);
+    color: black;
+  }
+  
+#showcase .showcase-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20rem;
+  background: url('../pic/ikonawhite.png') no-repeat center;
+}
