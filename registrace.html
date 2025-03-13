@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrace</title>
+    <link rel="stylesheet" href="css/registracestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="pic/ikonawhitesmall.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Hlavní stránka</a></li>
+                <li> <a href="what.html">Co je to motivace?</a></li>
+                <li> <a href="who.html">Motivační řečníci</a></li>
+                <li> <a href="books.html">Motivační četba</a></li>
+            </ul>
+        </nav>
+        <button> <a href="login.html"><font>Přihlášení</font></a></button>
+    </header>
+    <div class="container">
+        <div class="login_container">
+            <div class="login_title">
+                <span>Registrace</span>
+            </div>
+            <form>
+                <div class="input_wrapper">
+                    <input type="text" id="jmeno" class="input_field" required>
+                    <label for="jmeno" class="label">Jméno</label>
+                </div>
+                <div class="input_wrapper">
+                    <input type="text" id="prijmeni" class="input_field" required>
+                    <label for="prijmeni" class="label">Příjmení</label>
+                </div>
+                <div class="input_wrapper">
+                    <input type="email" id="email" class="input_field" required>
+                    <label for="email" class="label">Email</label>
+                </div>
+                <div class="input_wrapper">
+                    <input type="password" id="heslo" class="input_field" required>
+                    <label for="heslo" class="label">Heslo</label>
+                </div>
+                <div class="input_wrapper">
+                    <label for="muz">
+                        <input type="radio" name="pohlavi" id="muz" value="muz"> Muž
+                    </label>
+                    <label for="zena">
+                        <input type="radio" name="pohlavi" id="zena" value="zena"> Žena
+                    </label>
+                    <label for="ostatni">
+                        <input type="radio" name="pohlavi" id="ostatni" value="ostatni"> Ostatní
+                    </label>
+                </div>
+                <button type="submit" class="input-submit">Registrovat</button>
+            </form>
+            <div class="signup">
+                <p>Už máte účet? <a href="login.html">Přihlásit se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div>Kontaktujte nás:</div>
+        <a href="mailto:d21770@oaopava.cz">Žádosti o pomoc</a>
+        <a href="mailto:d21770@oaopava.cz">Spolupráce</a>
+        <div>Zdroje:</div>
+        <a href="zdroje.html">Seznam zdrojů</a>
+    </footer>
+</body>
+</html>
