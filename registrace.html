@@ -30,21 +30,21 @@
             <div class="login_title">
                 <span>Registrace</span>
             </div>
-            <form>
+            <form action="connect.php" method="post">
                 <div class="input_wrapper">
-                    <input type="text" id="jmeno" class="input_field" required>
+                    <input type="text" id="jmeno" class="input_field" name="jmeno"required>
                     <label for="jmeno" class="label">Jméno</label>
                 </div>
                 <div class="input_wrapper">
-                    <input type="text" id="prijmeni" class="input_field" required>
+                    <input type="text" id="prijmeni" class="input_field" name="prijmeni" required>
                     <label for="prijmeni" class="label">Příjmení</label>
                 </div>
                 <div class="input_wrapper">
-                    <input type="email" id="email" class="input_field" required>
+                    <input type="email" id="email" class="input_field" name="email" required>
                     <label for="email" class="label">Email</label>
                 </div>
                 <div class="input_wrapper">
-                    <input type="password" id="heslo" class="input_field" required>
+                    <input type="password" id="heslo" class="input_field" name="heslo"required>
                     <label for="heslo" class="label">Heslo</label>
                 </div>
                 <div class="input_wrapper">
