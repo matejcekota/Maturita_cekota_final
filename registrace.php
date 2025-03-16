@@ -1,18 +1,14 @@
 <?php
-
-/*$servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "databazematurita22"; 
-$dbname = "registrace_motivace";
-
+$dbname = "motivace_registrace";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
-
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $jmeno = $conn->real_escape_string($_POST['jmeno']);
@@ -21,22 +17,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $heslo = $conn->real_escape_string($_POST['heslo']);
     $pohlavi = $conn->real_escape_string($_POST['pohlavi']);
 
-
-    $hashed_password = password_hash($heslo, PASSWORD_BCRYPT);
-
-
+    // Kontrola, zda už email neexistuje
     $sql_check = "SELECT * FROM registrace WHERE email = '$email'";
     $result = $conn->query($sql_check);
 
     if ($result->num_rows > 0) {
         echo "Email již existuje!";
     } else {
-
+        // Pokud není email, uložíme uživatele
         $sql = "INSERT INTO registrace (jmeno, prijmeni, pohlavi, email, heslo) 
-                VALUES ('$jmeno', '$prijmeni', '$pohlavi', '$email', '$hashed_password')";
+                VALUES ('$jmeno', '$prijmeni', '$pohlavi', '$email', '$heslo')";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Úspěšně zaregistrováno!";
+            // Zobrazí zprávu o úspěšné registraci
+            echo "Úspěšně zaregistrováno! Nyní budete přesměrováni na přihlašovací stránku.";
+            
+            // Po 3 sekundách přesměruje na login.html
+            header("refresh:3;url=login.html");
+            exit();
         } else {
             echo "Chyba: " . $sql . "<br>" . $conn->error;
         }

@@ -25,18 +25,19 @@
         <button> <a href="login.html"><font>Přihlášení</font></a></button>
     </header>
     <div class="container">
-        <div class="login_container">
-            <div class="login_title">
-                <span>Přihlášení</span>
-            </div>
+    <div class="login_container">
+        <div class="login_title">
+            <span>Přihlášení</span>
+        </div>
+        <form action="login.php" method="POST">
             <div class="input_wrapper">
-                <input type="text" id="email" class="input_field" required>
+                <input type="text" id="email" class="input_field" name="email" required>
                 <label for="email" class="label">Email</label>
                 <i class="fa-regular fa-user icon"></i>
             </div>
 
             <div class="input_wrapper">
-                <input type="password" id="pass" class="input_field" required>
+                <input type="password" id="pass" class="input_field" name="heslo" required>
                 <label for="pass" class="label">Heslo</label>
                 <i class="fa-solid fa-lock icon"></i>
             </div>
@@ -44,21 +45,22 @@
             <div class="remember-forgot">
                 <div class="remember-me">
                     <input type="checkbox" id="remember">
-                    <label for="remember">Zapomatovat si mě</label>
+                    <label for="remember">Zapamatovat si mě</label>
                 </div>
                 <div class="forgot">
                     <a href="#">Zapomenuté heslo</a>
                 </div>
             </div>
             <div class="input_wrapper">
-                <input type="submit" class="input-submit" value="Přihlásit se">
+                <button type="submit" class="input-submit">Přihlásit se</button>
             </div>
+        </form>
 
-            <div class="signup">
-                <span>Nemáte účet?<a href="reg.html">Zaregistrujte se</a></span>
-            </div>
+        <div class="signup">
+            <span>Nemáte účet? <a href="reg.html">Zaregistrujte se</a></span>
         </div>
     </div>
+</div>
     <footer id="footer">
         <div>Kontaktujte nás:</div>
         <a href="mailto:d21770@oaopava.cz">Žádosti o pomoc</a>

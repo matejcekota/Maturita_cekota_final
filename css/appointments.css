@@ -1,0 +1,146 @@
+/* Reset default styles */
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lexend:wght@100..900&display=swap');
+@import url("navfoot.css");
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+header button a {
+    color: white;
+    text-decoration: none;
+}
+
+header button:hover {
+    background-color: #2980B9;
+}
+
+/* Centered container for the form */
+.appointment-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;  /* To center the form */
+    text-align: center; /* Align the content in the center */
+}
+
+/* Form title */
+.appointment-title span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;  /* Align form elements to center */
+}
+
+form label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form input[type="datetime-local"],
+form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px; /* Limit width for better appearance */
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .appointment-container {
+        width: 90%;  /* Smaller width on mobile */
+        padding: 20px;
+    }
+
+    form input[type="submit"],
+    form button {
+        font-size: 14px;
+    }
+}

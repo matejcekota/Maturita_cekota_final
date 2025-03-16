@@ -1,0 +1,66 @@
+/* General layout for appointments page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.appointment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.appointment:last-child {
+    border-bottom: none;
+}
+
+.appointment p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.appointment .branch-info {
+    font-style: italic;
+    color: #666;
+}
+
+.appointment .appointment-time {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.appointment a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.appointment a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
